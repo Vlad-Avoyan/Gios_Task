@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* --------------- Header Style ----------------- */
+
+.headerParent {
+    width: 100%;
+    height: 90px;
+    display: flex;
+}
+.logoMenuParent {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logoParent {
+    width: 200px;
+    height: auto;
+}
+.menuParent {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+} 
+.logo {
+    width: 60.21px;
+    height: 60.21px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #FFC400 0%, #FF00B0 100%);
+    position: absolute;
+}
+.whiteCenter {
+    width: 37px;
+    height: 37px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: white;
+}
+.logotext {
+    width: 49%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+.logotext p {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.logotext span {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.companyNameDiv{
+    width: 47%;
+    height: auto;
+}
+.menuOpenDiv {
+    width: 25%;
+    height: auto;
+    cursor: pointer;
+    padding-top: 23px;
+}
+.headerSearch {
+    width: 7%;
+    height: 20px;
+    margin-top: 28px;
+}
+.gradientDiv {
+    width: 40px;
+    height: 20px;
+    margin-top: 25px;
+    background: linear-gradient(144.68deg, #00F28F 10.24%, #4800FF 109.3%)
+}
+.textUnderGradient {
+    font-size: 15px;
+    height: 20px;
+    margin-left: 30px;
+    position: absolute
+}
+.textUnderGradient span {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.menuOpenDiv span {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.dropMenu {
+    width: 41%;
+    height: 750px;
+    position: absolute;
+    display: none;
+    background-color: #F5F8FD;
+}
+.menuOpenDiv:hover + .dropMenu{
+    display: block;
+}
+.listMenu {
+    width: 300px;
+    height: 470px;
+    display: inline-block;
+}
+.closeMenu {
+    width: 80px;
+    height: 20px;
+    float: right;
+}
+.closeText {
+    font-weight: 800;
+}
+.school, .lessons, .vebinar, .about, .blog, .contact {
+    font-weight: 900;
+    padding-left: 20px;
+
+}
+.contactUs {
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: linear-gradient(169.85deg, #00F28F 14.64%, #4800FF 95.54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 20px;
+}
+.listMenu span {
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.parentMood {
+    width: 250px;
+    height: 23px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.nightModeDiv {
+    width: 60px;
+    height: 20px;
+    border-radius: 50px;
+    border: 1px solid #cfcccc;
+    margin-left: 18px;
+
+}
+.onOff {
+    width: 18px;
+    height: 18px;
+    margin-left: 3px;
+    margin-top: 1px;
+    border-radius: 50px;
+    background: linear-gradient(134.23deg, #00F28F 10.24%, #4800FF 109.3%);
+}
+.textNightMode {
+    font-size: 10px;
+    width: 160px;
+    height: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.dropMenu hr {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.dropMenuParentInfo {
+    width: 95%;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.emailDiv {
+    width: 400px;
+    height: auto;
+}
+.email, .phoneText{
+    font-weight: 900;
+}
+.emailText {
+    font-family: 'Recursive', sans-serif;
+}
+.phoneDiv  {
+    width: 200px;
+    height: auto;
+    text-align: right;
+}
+.fb {
+    width: 20px;
+    height: auto;
+}
+.insta, .basket {
+    width: 30px;
+    height: auto;
+}
+/* Large desktops and laptops */
+
+@media only screen and (max-width: 1200px) {
+    .logoMenuParent {
+        width: 95%;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    .whiteCenter {
+        width: 30px;
+        height: 30px;
+    }
+    .logotext {
+        margin-left: 52px;
+    }
+    .logotext p {
+        font-size: 20px;
+    }
+    .logotext span {
+        font-size: 15px;
+    }
+    .dropMenu {
+        height: 600px;
+        margin-left: -10px;
+    }
+    .dropMenuParentInfo {
+        height: 90px;
+    }
+    .fb {
+        width: 17px;
+        height: auto;
+    }
+    .insta, .basket {
+        width: 25px;
+        height: auto;
+    }
+    .emailText {
+        font-size: 15px;
+    }
+    .phoneDiv {
+        width: 250px ;
+    }
+}
+  /* Portrait tablets and small desktops */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .headerParent {
+        height: 58px;
+    }
+    .logoParent {
+        width: 150px;
+    }
+    .dropMenu {
+        width: 41%;
+        margin-right: 250px;
+    }
+    .listMenu {
+        width: 180px;
+    }
+    .parentMood {
+        width: 180px;
+    }
+    .contactUs {
+        font-size: 15px;
+    }
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    .whiteCenter {
+        width: 20px;
+        height: 20px;
+    }
+    .logotext {
+        margin-left: 42px;
+    }
+    .logotext p {
+        font-size: 15px;
+    }
+    .logotext span {
+        font-size: 10px;
+    }
+    .companyNameDiv {
+        width: 42%;
+    }
+    .menuOpenDiv {
+        width: 31%;
+    }
+    .gradientDiv {
+        width: 41px;
+        height: 20px;
+    }
+    .textUnderGradient span {
+        font-size: 10px;
+    }
+    .closeMenu {
+        width: 22px;
+    }
+    .closeText {
+        display: none;
+    }
+    .dropMenuParentInfo {
+        display: block;
+        text-align: center;
+
+    }
+    .emailDiv {
+        width: auto;
+    }
+    .phoneDiv {
+        width: auto;
+        text-align: center;
+    }
+}
+
+/* Landscape portrait tablets */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .headerParent {
+        height: 80px;
+    }
+    .menuParent {
+        width: 50%;
+    }
+    .companyNameDiv {
+        display: none;
+    }
+    .textUnderGradient span {
+        font-size: 10px;
+    }
+    .headerSearch {
+        width: 20%;
+        margin-top: 21px;
+        margin-left: 30px;
+    }
+    .menuOpenDiv {
+        width: 50%;
+    }
+    .logoParent {
+        width: 150px;
+    }
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+    .whiteCenter {
+        width: 15px;
+        height: 15px;
+    } 
+    .logotext {
+        margin-left: 38px;
+    }
+    .logotext p {
+        font-size: 12px;
+    }
+    .logotext span {
+        font-size: 10px;
+    }
+    .closeMenu {
+        width: 17px;
+    }
+    .closeText {
+        display: none;
+    }
+    .listMenu {
+        width: 200px;
+    }
+    .dropMenuParentInfo {
+        display: block;
+    }
+    .nightModeDiv {
+        width: 50px;
+    }
+    .parentMood {
+        width: 200px;
+    }
+    .onOff {
+        width: 15px;
+        height: 15px;
+    }
+    .textNightMode {
+        width: 120px;
+        font-size: 10px;
+    }
+    .emailDiv {
+        text-align: center;
+        width: auto;
+    }
+    .phoneDiv {
+        width: auto;
+        text-align: center;
+    }
+    .dropMenu {
+        width: 50%;
+    }
+}
+
+/* Landscape phones and smaller */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .menuParent {
+        width: 50%;
+    }
+    .companyNameDiv {
+        display: none;
+    }
+    .logoParent {
+        width: 100px;
+    }
+    .logotext {
+        margin-left: 32px;
+    }
+    .logotext p {
+        font-size: 12px;
+    }
+    .logotext span {
+        font-size: 10px;
+    }
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+    .whiteCenter {
+        width: 10px;
+        height: 10px;
+    }
+    .menuOpenDiv span {
+        display: none;
+    }
+    .menuParent {
+        width: 150px;
+    }
+    .menuOpenDiv {
+        width: 70px;
+    }
+    .headerSearch {
+        margin-left: 50px;
+    }
+    .dropMenu {
+        width: 100%;
+        right: 7px;
+    }
+    .listMenu {
+        width: 60%;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .closeMenu {
+        width: 20px;
+    }
+    .closeText {
+        display: none;
+    }
+    .dropMenuParentInfo {
+        display: block;
+        text-align: center;
+    }
+    .emailDiv, .phoneDiv {
+        width: auto;
+        text-align: center;
+    }
+}
